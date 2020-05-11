@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 L = float(100)  # 1 area dimension value
-N = 100  # needle amount
-nLen = 10  # needle length
-r = 15  # distance between straight lines
+N = 1000  # needle amount
+nLen = 5  # needle length
+r = 20  # distance between straight lines
 
 # plot configuration
 plt.figure(figsize=(11, 11))
@@ -23,12 +23,13 @@ for v in vLines:
 
 
 def find_nearest_line(right_x):
-    lower, upper = float(0), float(L)
+    lower, upper = 0., 0.
     for x in vLines:
         if x <= right_x:
             lower = x
         else:
             upper = x
+            break
     if np.abs(lower - right_x) < np.abs(upper - right_x):
         return lower
     else:
@@ -48,8 +49,8 @@ for p in range(N):
     # looking for nearest vertical line from right
     x_near = find_nearest_line(max(x1, x2))
     # distance from head projection to nearest vertical line
-    h = x_near - min(x1, x2)
-    if h <= x2 - x1:
+    h = abs(x_near - min(x1, x2))
+    if h <= abs(x2 - x1) and (min(x1, x2) <= x_near):
         plt.plot([x1, x2], [y1, y2], '-,', color='r')
         K = K + 1
     else:

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
-N = 1000  # number of points
+N = 10000  # number of points
 L = float(1000)  # square side value
 
 # plot configuration
