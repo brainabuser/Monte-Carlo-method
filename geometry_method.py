@@ -22,6 +22,7 @@ for x in np.arange(0, L, 1):
 plt.axvline(x=L)
 plt.axhline(y=L)
 
+# main computation part
 K = 0
 for p in range(N):
     x = random.random() * L
