@@ -4,9 +4,9 @@ Repository dedicated to [Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_
 ***
 Two implementations to estimate the Pi value: 
 ---
-Buffon
+**Buffon**
 ![geometrical](pics/Buffon.png)
 
 ---
-Geometrical
+**Geometrical**
 ![Buffon's](pics/Geometrical.png)
