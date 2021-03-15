@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
-N = 10000  # number of points
+N = 1000  # number of points
 L = float(1000)  # square side value
 
 # plot configuration
@@ -28,7 +28,7 @@ for p in range(N):
     x = random.random() * L
     y = random.random() * L
     if x ** 2 + y ** 2 <= L ** 2:
-        K = K + 1
+        K += 1
         plt.plot(x, y, 'x', color='r')
     else:
         plt.plot(x, y, 'x', color='b')
