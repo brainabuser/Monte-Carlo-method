@@ -3,9 +3,9 @@
 
 Implementations of ***Pi*** evaluation: 
 ---
-**Buffon**
+[**Buffon**](https://ru.wikipedia.org/wiki/Задача_Бюффона_о_бросании_иглы)
 ![geometrical](pics/Buffon.png)
 
 ---
-**Geometrical**
+[**Geometrical**](https://habr.com/ru/post/128454/)
 ![Buffon's](pics/Geometrical.png)
